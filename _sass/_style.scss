@@ -1,0 +1,19 @@
+body {
+  padding: 2rem;
+}
+
+#container {
+  margin: 0 auto 12rem;
+}
+
+// main article .img {
+//   margin-left: calc(-50vw + 50%);
+//   margin-right: calc(-50vw + 50%);
+//   padding: 0 2rem;
+// }
+
+main article img {
+  display: block;
+  margin: 0 auto;
+  max-width: calc(100vw - 4rem);
+}

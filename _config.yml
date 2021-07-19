@@ -1,0 +1,26 @@
+title: Nick Platt
+url: https://adventur.es
+email: platt.nicholas@gmail.com
+github_username: caipre
+description: >-
+  Adventure 2021
+
+permalink: /:year/:month/:title
+include:
+- _redirects
+
+markdown: kramdown
+sass:
+  style: compressed
+plugins:
+- jekyll-feed
+- jekyll-seo-tag
+- jemoji
+
+
+defaults:
+- scope:
+    path: .
+    type: posts
+  values:
+    layout: post

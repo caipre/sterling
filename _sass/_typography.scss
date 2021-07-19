@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Montserrat:wght@700');
+
+$sans: 'montserrat', sans-serif;
+$serif: 'ibm plex serif', serif;
+$primary: #121212;
+$accent: #106b2b;
+
+// vertical rhythm from https://www.gridlover.net/try
+
+html, body {
+  font-family: $serif;
+  font-size: 20px;
+  line-height: 1.2;
+  color: $primary;
+  text-rendering: optimizeLegibility;
+}
+
+h1 {
+  font-family: $sans;
+  font-size: 2.6rem;
+  letter-spacing: -0.1rem;
+  line-height: 0.9;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+h2 {
+  font-family: $sans;
+  font-size: 1.8rem;
+  margin-top: 3rem;
+  margin-bottom: 1.6rem;
+}
+
+h3 {
+  font-family: $sans;
+  font-size: 1.25rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-family: $sans;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+a:link, a:visited {
+  color: $primary;
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  color: darken($accent, 15%) !important;
+}
+
+p, ul, ol, pre, table, blockquote {
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 1.3rem;
+  max-width: 72ch;
+}
+
+p a:link, p a:visited {
+  background-color: #dce4ee;
+  padding: 2px 4px;
+  margin: -2px;
+  text-decoration: underline;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+header + hr { margin: -1rem; }
+
+hr {
+  border: 0;
+  background-color: #ddd;
+  height: 1px;
+  margin: 1rem auto;
+}
+
+a, b, i, strong, em, small, code {
+}
+
+pre {
+  line-height: 1.1;
+  overflow-x: scroll;
+}
+
+sub, sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
